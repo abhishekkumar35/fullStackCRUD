@@ -1,0 +1,36 @@
+post http://localhost:8001/addemployee HTTP/1.0
+Content-Type: application/json
+
+{
+   
+    "firstName" : "Johnny",
+    "lastName" : "Restro",
+    "emailId" : "restro@gmail.com"
+
+}
+###
+get http://localhost:8001/getemployee/1 HTTP/1.0
+Content-Type: application/json
+
+###
+get http://localhost:8001/create HTTP/1.0
+Content-Type: application/json
+###
+put http://localhost:8001/updateemployee/1 HTTP/1.0
+Content-Type: application/json
+
+{
+    "employeeId": 1,
+    "firstName" : "John",
+    "lastName" : "kuba",
+    "emailId" : "gooodgmail@gmail.com"
+
+}
+###
+delete http://localhost:8001/deleteemployee/1 HTTP/1.0
+Content-Type: application/json
+
+
+###
+get http://localhost:8001 HTTP/1.0
+Content-Type: application/json
